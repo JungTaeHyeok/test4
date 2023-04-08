@@ -1,0 +1,130 @@
+/* CSS 영역 (스타일 정보를 바로 기입) */
+
+/* 1. 속성 선택자 */
+
+/* div 요소 중 name 속성값이 name1과 "일치" 하는 요소 */
+div[name="name1"] {
+  background-color: orangered;
+}
+
+/* div 요소 중 name 속성값에 name1이 "포함" 되어있는 요소 (단어로써)  */
+div [name~="name1"] {
+  background-color: yellow;
+}
+
+/* div 요소 중 class 속성값이 div로 "시작"되는 요소 (-앞의 한 단어로써)*/
+div[class|="div"] {
+  background-color: cyan;
+}
+/* div 요소 중 name 속성값이 na로 "시작" 되는 요소 */
+div[name^="na"] {
+  background-color: blue;
+}
+
+/* div 요소 중 class 속성값이 ss로 "끝" 나는 요소 */
+div[class$="ss"] {
+  color: white;
+}
+/* div 요소 중  class 속성값에 i 가 "포함" 되어있는 요소 */
+div[class*="i"] {
+  background-color: yellow;
+  color: red;
+}
+
+/* 응용 : class 속성값이 div-class인 애들 중 name 속성값에 name3이 "포함"되어있는 요소 */
+.div-class[name~="name3"] {
+  background-color: pink;
+}
+
+/* 2. 자손선택자와 후손선택자 */
+
+/* a>b : a 요소의 자손들 중에서 b 요소들만 선택 */
+#test1 > h4 {
+  background-color: red;
+}
+
+#test1 > ul > li {
+  /* 타고타고 들어가서 자손들한테만도 가능*/
+  background-color: blue;
+}
+
+/* a b : a 요소의 후손 (자손 포함 모든 하위요소) 들 중에서 b 요소들만 선택 */
+#test1 li {
+  color: red;
+}
+
+/* 3. 동위 (같은 레벨) 선택자 */
+
+/* a+b : a요소 뒤에 b 요소 하나만을 선택 */
+#test2 + div {
+  background-color: yellow;
+}
+/* 바로 뒤의 요소가 아니기 때문에 선택 X, 스타일 반영 X */
+#test2 + ul {
+  background-color: pink;
+}
+
+/* a~b : a요소 뒤의 모든 b 요소 다 선택 */
+#test2 ~ div {
+  background-color: green;
+}
+
+#test2 ~ ul {
+  background-color: deeppink;
+}
+
+/* 4. 반응 선택자 */
+.area {
+  background-color: yellowgreen;
+  width: 100px;
+  height: 100px;
+}
+
+#active-test:active {
+  background-color: yellow;
+  color: red;
+  cursor: pointer;
+}
+
+#hover-test:hover {
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+}
+
+/* 5. 상태 선택자 */
+
+/* checked 된 상태의 요소만 선택 */
+/* 기본적으로 해당 선택된 요소 자체에만 스타일이 반영됨 */
+input[type="checkbox"]:checked + label {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+/* 체크박스가 체크 될 때 크기도 같이 20px로 변경하고 싶다면 : 동위 선택자 응용 */
+/* input[type=checkbox]:checked+label {
+    font-size : 20px;
+} */
+
+/* focus 된 상태의 요소만 선택 */
+input[name^="user"]:focus {
+  background-color: pink;
+  height: 20px;
+  font-size: 15px;
+}
+
+/* enadbled 또는 disabled 된 상태의 요소만 선택 */
+button:enabled {
+  background-color: fuchsia;
+}
+
+button:disabled {
+  background-color: indigo;
+}
+input[name^="user"]:disabled {
+  background-color: red;
+  color: ;
+}
+input[name^="user"]:enabled {
+  background-color: blue;
+}
