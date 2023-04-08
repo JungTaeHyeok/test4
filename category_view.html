@@ -13,19 +13,11 @@
                     min-width: 1350px;
                 }
             }
-            
-            
 
-            div {
-            /* border: 1px solid black; */
-            padding: 0%;
-            border-collapse : separate;
-            }
             .container{
             width: 100%;
             height: 100%;
             background-color: white;
-            text-decoration: none;
             }
 
             .row {
@@ -38,23 +30,21 @@
             background-color: white;
             }
             
-            .card>img {
-            height: 142px;
+            #category1 h2 {
+                font-size: 30px;
+                font-weight: bold;
             }
-            /*   
-            .ido>div>div { 
-            테이블만 보더 넣기
-            border: 1px solid black;
+            
+            #category2>div>div>div{
+                height: 40px;
+                border: 1px solid black;
+                margin: 1px;
+                border-collapse: separate;
+                padding: 5px;
+                font-size: 20px;
+                font-weight: bold;
+            }
 
-            } */
-
-            #thumbnail>div>div {
-                width:250px;
-                margin : 3px;
-            }
-            #thumbnail>div>div>.card{
-                width:250px;
-            }
             #category3 div{
                 font-size:17px;
                 
@@ -62,14 +52,42 @@
 
             #category3>div>.category3_left{
                 width:1086px;
+            }
+            #category3>div>.category3_left>p{
+                display: inline;
+                font-weight: bold;
+            }
 
+            #category3>div>.category3_left>#category_name{
+                color: rgb(191, 233, 249);
+            }
+            #category3>div>.category3_left>#category_count{
+                color: rgb(191, 233, 249);
             }
             #category3>div>.category3_right{
                 width:60px;
-                text-decoration: none;
                 text-align:end;
                 padding:0%;
                 
+            }
+            #category3>div>.category3_right>a{
+                text-decoration: none;
+            }
+
+            #view_count{
+                display: flex;
+                justify-content: end;
+            }
+            #thumbnail img{
+                height: 142px;
+            }
+
+            #thumbnail>div>div {
+                width:250px;
+                margin : 3px;
+            }
+            #thumbnail>div>div>.card{
+                width:250px;
             }
 
             .pagination{
@@ -132,8 +150,10 @@
 
         <div class="container" id="category3">
             <div class="row" id="asc" >
-            <!-- 텍스트 왼쪽 정렬 -->
-                <div class="category3_left" >자켓의 검색결과</div>
+                <div class="category3_left"  >
+                    <p id="category_name">자켓</p><p>의 검색결과</p>
+                    <p id="category_count">60,010개</p>
+                </div>
                 <div class="category3_right" >
                     <a href="">정확도순</a>
                 </div>
@@ -150,6 +170,18 @@
         </div>
 
         <hr>
+        <div class="container" id="view_count">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown" >
+                <button type="button" class="btn btn-primary">20개씩 보기!</button>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="">
+                        <a class="dropdown-item" href="#" ">40개씩 보기!</a>
+                        <a class="dropdown-item" href="#">50개씩 보기!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
 
         <div class="container" id="thumbnail">
