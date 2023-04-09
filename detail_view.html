@@ -9,120 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
-        <style>
-            @media (max-width: 1800px) {
-                .container {
-                    min-width: 1350px;
-                }
-            }
-            @media (min-width: 1400px) {
-                .container {
-                    max-width: 1350px;
-                }
-            }
+        <link rel="stylesheet" href="css/trade_board.css">
 
-            body {
-                background-color : rgb(191, 233, 249);
-                font-family: 'Gamja Flower', cursive;
-            }
-            .container{
-                width: 100%;
-                height: 100%;
-                background-color: rgb(191, 233, 249);
-            }
-
-            .row {
-                width: 100%;
-                height: 100%;
-            }
-
-            .col {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(191, 233, 249);
-            }
-            
-            #category1 h2 {
-                font-size: 30px;
-                font-weight: bold;
-            }
-            
-            #category2>div>div>div{
-                height: 40px;
-                border: 1px solid black;
-                margin: 0.3px;
-                padding: 5px;
-                font-size: 20px;
-                font-weight: bold;
-                border-radius: var(--bs-border-radius);
-                background-color: white;
-            }
-
-            #category3 div{
-                font-size:23px;
-                
-            }
-
-            #category3>div>.category3_left{
-                width:970px;
-            }
-
-            #category3>div>.category3_left>p{
-                display: inline;
-                font-weight: bold;
-            }
-
-            #category3>div>.category3_left>#category_name{
-                color: black;
-            }
-
-            #category3>div>.category3_left>#category_count{
-                color: black;
-            }
-
-            #category3>div>.category3_right{
-                width:80px;
-                text-align:end;
-                padding:0%;
-            }
-            #category3>div>.category3_right_1{
-                width:65px;
-                text-align:end;
-                padding:0%;
-            }
-
-            #category3>div>.category3_right>a{
-                text-decoration: none;
-                color: black;
-            }
-            #category3>div>.category3_right_1>a{
-                text-decoration: none;
-                color: black;
-            }
-
-            #view_count{
-                display: flex;
-                justify-content: end;
-                width: 1300px;
-            }
-            #thumbnail img{
-                height: 142px;
-            }
-
-            #thumbnail>div>div {
-                width:250px;
-                margin : 3px;
-            }
-            #thumbnail>div>div>.card{
-                width:250px;
-            }
-
-            .pagination{
-                display: flex;
-                justify-content: center;
-            }
-
-        </style>    
     </head>
     <body>
         <br><br>
@@ -143,11 +31,11 @@
         <div class="container" id="category2">
             <div class="ido">
                 <div class="row text-center" >
-                    <div class="col" id="did">여성가방</div>
-                    <div class="col" id="did">남성가방</div>
-                    <div class="col" id="did">여행용</div>
-                    <div class="col" id="did">가정용</div>
-                    <div class="col" id="did">몰라요</div>
+                    <div class="col" >여성가방</div>
+                    <div class="col" >남성가방</div>
+                    <div class="col" >여행용</div>
+                    <div class="col" >가정용</div>
+                    <div class="col" >몰라요</div>
                 </div>
                 <div class="row text-center">
                     <div class="col">여성가방</div>
@@ -175,8 +63,8 @@
         <br>
         <br>
 
-        <div class="container" id="category3">
-            <div class="row" id="asc" >
+        <div class="container">
+            <div class="row" >
                 <div class="category3_left"  >
                     <p id="category_name">자켓</p><p>의 검색결과</p>
                     <p id="category_count">60,010개</p>
