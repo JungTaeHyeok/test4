@@ -12,7 +12,7 @@ body { background-color: white; font-family: "Gamja Flower", cursive; }
 #category1 h2 { font-size: 30px; font-weight: bold; }
 #category1 > div > #category1_icon { width: 90px; }
 #category1 > div > #category1_select > select { height: 37px; padding: 2px 0px 0px 20px; font-size: 21px; }
-#category2 > div > div {height: 40px;border: 1px solid black;margin: 0.3px;padding: 5px;font-size: 20px;font-weight: bold;border-radius: var(--bs-border-radius);background-color: white;color: #BFE9F9;}
+#category2 > div > div {height: 40px;width: 264px;border: 1px solid black;margin: 0.3px;padding: 5px;font-size: 20px;font-weight: bold;border-radius: var(--bs-border-radius);background-color: white;color: #BFE9F9;}
 #category3 div { font-size: 23px; }
 #category3 > div > .category3_left { width: 995px; }
 #category3 > div > .category3_left > p { display: inline; font-weight: bold; }
