@@ -24,6 +24,6 @@ body { background-color: white; font-family: "Gamja Flower", cursive; }
 #category3 > div > .category3_right_1 > a { text-decoration: none; color: rgb(191, 233, 249); }
 #view_count { display: flex; justify-content: end; width: 1320px; margin-bottom: 20px; }
 #thumbnail img { height: 142px; border-bottom: 1px solid black; }
-#thumbnail > div > div { width: 250px; margin: 3px; }
-#thumbnail > div > div > .card { width: 250px; border: 1px solid black; }
+#thumbnail > div > div {width: 330px;margin: 3px;}
+#thumbnail > div > div > .card {width: 250px;border: 1px solid black;}
 .pagination { display: flex; justify-content: center; }
